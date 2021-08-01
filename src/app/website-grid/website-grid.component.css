@@ -1,0 +1,15 @@
+body{
+    font-family: monospace;
+    letter-spacing: 1,2px;
+}
+div.content > div.header {
+    text-transform: uppercase;
+}
+
+div.ui.card{
+    max-width: 250px;
+    margin-top: 2rem;
+}
+div.ui.statistic{
+    display: block;
+}

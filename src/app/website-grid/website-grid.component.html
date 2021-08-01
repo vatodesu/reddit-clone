@@ -1,0 +1,27 @@
+  <div class="four wide column">
+  <div class="ui card">
+      <div class="content">
+        <img class="right floated mini ui image" src="{{website.imgLink}}">
+        <div class="header left aligned">
+          {{website.title}}
+        </div>
+        <div class="meta left aligned">
+          <a href="{{website.link}}" target="blank">{{website.domain()}}<i class="external alternate icon"></i></a>
+        </div>
+        <div class="ui statistic" [ngClass]="{'red': website.votes <= 0}">
+          <div class="label centere aligned">
+            Point
+          </div>
+          <div class="value center eligned">
+            {{website.votes}}
+          </div>
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="ui two buttons">
+          <div class="ui basic green button" (click)="thumbsUp()"><i class="thumbs up icon"></i></div>
+          <div class="ui basic red button" (click)="thumbsDown()"><i class="thumbs down icon"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>

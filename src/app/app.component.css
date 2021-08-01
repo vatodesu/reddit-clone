@@ -1,0 +1,7 @@
+body{
+    font-family: monospace;
+    letter-spacing: 1,2px;
+}
+div.content > div.header {
+    text-transform: uppercase;
+}
